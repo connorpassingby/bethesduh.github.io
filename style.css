@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:url('images/index/bg.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+	font-family: courier;
+}
+
+#body {
+	margin-top: 3em;
+}
+
+/*NAVIGATION BAR : START*/
+nav ul {
+	list-style-type: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	display:flex;
+	justify-content: center;
+}
+
+nav ul li {
+	display: list-item;
+	color:white;
+}
+
+nav ul a {
+	display: block;
+	padding: 2em 5em;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+nav ul a:hover{
+	color: red;
+	font-weight: bold;
+	border-bottom: solid 5px red;
+}
+
+.active {
+	border-bottom: solid 5px white;
+	font-weight: bold;
+}
+/*NAVIGATION BAR : END*/
+
+
+/*HOME : START*/
+#banner {
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	height: 20em;
+	width: 23em;
+	border: none;
+	border-radius: 50%;
+	background-color: rgba(234,234,234, 0.8);
+	transition: 0.3s;
+	padding: 2.5em 2em;
+}
+
+#banner div {
+	text-align: center;
+	position: relative;
+	top: 4em;
+}
+
+#banner:hover {
+	box-shadow: 0 0 1em grey;
+	background-color: rgba(234,234,234, 1);
+}
+
+#banner img {
+	width: 100%;
+	margin-top: 1em;
+}
+
+#banner h3 {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.rowofbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+.rowofbox > div {
+	border: none;
+	background-color: rgb(234,234,234);
+	transition: 0.3s;
+	color: white;
+	border-radius: 8px;
+	width: 20%;
+	height: 10em;
+	margin: 10px;
+	text-align: center;
+	padding: 1em;
+	opacity: 0.5;
+
+}
+
+.rowofbox > div:hover {
+	opacity: 1;
+	box-shadow: 0 0 1em grey;
+	color: black;
+}
+
+.boximg {
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+}
+
+/*HOME : END*/  /*10:42; 10/08/2019; whew omg*/
+
+
+.rowofbox > section {
+	width: 20em;
+	padding: 1em 1em;
+	background-color:rgba(234,234,234, 0.8);
+	border: none;
+	border-radius: 8px;
+	transition: 0.3s;
+	margin: 0 1em 3em 1em;
+	line-height: 2.5em;
+}
+
+section .wide {
+	margin: 0;
+}
+
+article {
+	width: 55%;
+	background-color:rgba(234,234,234, 0.8);
+	padding:3em 6em;
+	margin: auto;
+	margin-bottom: 3em;
+	line-height: 2.5em;
+	border: none;
+	border-radius: 8px;
+	transition: 0.3s;
+    /*box-shadow: 0 0 10px 10px rgba(234,234,234, 0.8);	*/
+}
+
+article:hover, section:hover {
+	box-shadow: 0 0 1em 5px grey;
+	background-color:rgba(234,234,234, 0.95);
+}
+
+article p:not(.indentmenot), section p {
+	text-indent:50px;
+	text-align: justify;
+}
+
+.indentmenot {
+	line-height: 1.5em;
+}
+
+article h1 {
+	font-size: 2.5em;
+	letter-spacing: 8px;
+}
+
+.arthr {
+	margin: 10px 0 10px 0;
+	display: block;
+	width: 8em;
+	border: solid 3px red;
+	color: red;
+
+}
+
+.wide {
+	margin: 1em 0;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+}
+
+/*ABOUT US : START*/
+.bigteam {
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin:2em;
+}
+
+.team { /*pictures*/
+	border: none;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin: 0 1em;
+	transition: 0.3s;
+}
+
+.team:hover {
+	box-shadow: 0 0 15px 5px red;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.marcel:hover {
+	content: url('images/marcel/smile.png');
+}
+
+/*ABOUT US: END*/
+
+
+
+/*CONTACT US: START*/
+form {
+	border-left: solid 3px red;
+	padding-left: 1em;
+	margin-left: 3em;
+	margin-top:1em;
+	padding-bottom: .5em;
+}
+
+input, select {
+	display: block;
+	width: 300px;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 20px;
+	transition: 0.3s;
+}
+
+input:hover, textarea:hover, select:hover {
+	box-shadow: 0 0 5px 2px grey;
+}
+
+select {
+	width: 340px;
+	transition: 0.3s;
+}
+
+textarea {
+	display: block;
+	resize: none;
+	width: 300px;
+	height: 150px;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 20px;
+	transition: 0.3s;
+}
+
+input[type=submit] {
+	margin-top: 1em;
+	width: 340px;
+	background-color: darkred;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: white;
+	transition: 0.3s;
+}
+
+input[type=submit]:hover {
+	background-color: #7f0000;
+}
+
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

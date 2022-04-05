@@ -1,0 +1,64 @@
+body {
+	margin:0 em;
+
+}
+
+#box {
+	width:60%;
+	margin:auto;
+	border: solid 1px;
+	padding:1em;
+	font-family="lucida console";
+
+}
+
+img:not(.aside){
+	border:solid 1px;
+	border-radius:50%;
+	height: 10em;
+	width: 10em;
+	display: block;
+	margin:auto;
+
+}
+
+aside {
+  border-radius: 50px 0 0 50px;
+  background-color: #DCDCDC;
+  height: 31%;
+  width: 9.5em;
+  position: fixed;
+  right: 0px;
+  bottom: 20%;
+  transition:0.3s;
+}
+
+aside img {
+  width: 100%;
+}
+
+aside div {
+  padding: 1.7em 1em 1em 1em;
+  color: #696969;
+}
+
+aside div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+aside div li a {
+  display: block;
+  color: #696969;
+  text-decoration: none;
+}
+
+aside div li a:hover {
+  color: red;
+}
+
+aside:hover {
+  box-shadow: 0 0 .5em red;
+}
